@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 120" width="1600" height="120" role="img" aria-label="NOVA section divider">
+  <!-- Reusable transparent NOVA divider for dark interfaces -->
+  <defs>
+    <pattern id="soft-grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#00E5FF" stroke-opacity=".055"/>
+    </pattern>
+    <filter id="cyan-glow" x="-100%" y="-500%" width="300%" height="1100%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Subtle technical texture; no background fill keeps the asset transparent. -->
+  <rect width="1600" height="120" fill="url(#soft-grid)"/>
+
+  <!-- Fine cyan signal line with a calm center gap. -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M64 60H738M862 60h674" stroke="#00E5FF" stroke-opacity=".26"/>
+    <path d="M576 60h162M862 60h162" stroke="#00E5FF" stroke-opacity=".82" filter="url(#cyan-glow)"/>
+    <circle cx="576" cy="60" r="2" fill="#00E5FF"/><circle cx="1024" cy="60" r="2" fill="#00E5FF"/>
+  </g>
+
+  <!-- Soft system heartbeat behind the NOVA icon. -->
+  <g fill="none" stroke="#00E5FF" stroke-opacity=".32">
+    <circle cx="800" cy="60" r="22"><animate attributeName="r" values="17;31;17" dur="2.8s" repeatCount="indefinite"/><animate attributeName="opacity" values=".46;0;.46" dur="2.8s" repeatCount="indefinite"/></circle>
+    <circle cx="800" cy="60" r="17" stroke="#7C3AED" stroke-opacity=".42"/>
+  </g>
+
+  <!-- Compact NOVA neural-hex mark, built to remain crisp at small sizes. -->
+  <g transform="translate(776 36)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M24 2 45 14v25L24 51 3 39V14Z" stroke="#00E5FF" stroke-width="3" filter="url(#cyan-glow)"/>
+    <path d="M14 36V17l20 20V17" stroke="#00E5FF" stroke-width="4"/>
+    <circle cx="24" cy="2" r="3" fill="#7C3AED" stroke="none"/>
+    <circle cx="45" cy="26.5" r="3" fill="#00FFA3" stroke="none"/>
+  </g>
+</svg>

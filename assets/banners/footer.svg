@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 250" width="1600" height="250" role="img" aria-labelledby="title desc">
+  <!-- NOVA session-complete footer with transparent console aesthetic -->
+  <title id="title">NOVA Session Complete</title>
+  <desc id="desc">An elegant AI console shutdown footer.</desc>
+  <defs>
+    <pattern id="console-grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#00E5FF" stroke-opacity=".05"/></pattern>
+    <radialGradient id="ambient"><stop stop-color="#7C3AED" stop-opacity=".18"/><stop offset="1" stop-color="#7C3AED" stop-opacity="0"/></radialGradient>
+    <linearGradient id="signal" x1="0" x2="1"><stop stop-color="#00E5FF" stop-opacity="0"/><stop offset=".5" stop-color="#00E5FF"/><stop offset="1" stop-color="#7C3AED" stop-opacity="0"/></linearGradient>
+    <filter id="glow" x="-100%" y="-200%" width="300%" height="500%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <!-- Subtle transparent backdrop texture and ambient center light. -->
+  <rect width="1600" height="250" fill="url(#console-grid)"/>
+  <ellipse cx="800" cy="126" rx="360" ry="150" fill="url(#ambient)"/>
+
+  <!-- Tapered terminal signal line. -->
+  <path d="M190 125H1410" stroke="url(#signal)" stroke-width="1"/>
+  <path d="M610 125h125M865 125h125" stroke="#00E5FF" stroke-opacity=".48" stroke-width="2" filter="url(#glow)"/>
+
+  <!-- Central NOVA emblem and pulsing shutdown beacon. -->
+  <g transform="translate(776 72)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="24" cy="53" r="38" stroke="#00E5FF" stroke-opacity=".28"><animate attributeName="r" values="30;47;30" dur="3s" repeatCount="indefinite"/><animate attributeName="opacity" values=".42;0;.42" dur="3s" repeatCount="indefinite"/></circle>
+    <path d="M24 2 45 14v25L24 51 3 39V14Z" stroke="#00E5FF" stroke-width="3" filter="url(#glow)"/>
+    <path d="M14 36V17l20 20V17" stroke="#00E5FF" stroke-width="4"/>
+    <circle cx="24" cy="2" r="3" fill="#7C3AED" stroke="none"/>
+    <circle cx="45" cy="26.5" r="3" fill="#00FFA3" stroke="none"/>
+  </g>
+
+  <!-- Console completion copy. -->
+  <g font-family="Inter,Segoe UI,Arial,sans-serif" text-anchor="middle">
+    <text x="800" y="155" fill="#65EFFF" font-size="15" font-weight="700" letter-spacing="5">NOVA</text>
+    <text x="800" y="185" fill="#E8F2FC" font-size="22" font-weight="600" letter-spacing=".2">Session Complete</text>
+    <text x="800" y="210" fill="#91A0B7" font-size="14">Thank you for visiting.</text>
+    <text x="800" y="232" fill="#63748F" font-size="11" font-weight="700" letter-spacing="1.6">AWAITING NEXT VISITOR...</text>
+  </g>
+
+  <!-- Minimal terminal endpoints. -->
+  <g fill="#00E5FF" filter="url(#glow)"><circle cx="190" cy="125" r="2"/><circle cx="1410" cy="125" r="2"/></g>
+</svg>

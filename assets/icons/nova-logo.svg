@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 256" role="img" aria-labelledby="title desc">
+  <!-- NOVA logo system: icon, stacked wordmark, and horizontal lockup -->
+  <title id="title">NOVA Logo</title>
+  <desc id="desc">Original neural hexagon logo for Neural Operations and Vision Architecture.</desc>
+  <defs>
+    <!-- Core mark remains legible at small sizes through its bold hexagon and N silhouette. -->
+    <g id="nova-mark" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M48 5 84 26v44L48 91 12 70V26Z" stroke="#00E5FF" stroke-width="5"/>
+      <path d="M31 65V31l34 34V31" stroke="#00E5FF" stroke-width="7"/>
+      <circle cx="48" cy="5" r="5" fill="#7C3AED" stroke="none"/>
+      <circle cx="84" cy="48" r="5" fill="#00FFA3" stroke="none"/>
+      <path d="M48 16v9M73 42h-9" stroke="#7C3AED" stroke-width="2.5"/>
+    </g>
+    <g id="nova-wordmark" font-family="Inter,Segoe UI,Arial,sans-serif">
+      <text fill="#EAFBFF" font-size="49" font-weight="700" letter-spacing="7">NOVA</text>
+      <text y="25" fill="#7B8DA5" font-size="9.5" font-weight="700" letter-spacing="1.75">NEURAL OPERATIONS &amp; VISION ARCHITECTURE</text>
+    </g>
+  </defs>
+
+  <!-- Version 1: icon only -->
+  <g id="icon-only" transform="translate(72 80)">
+    <use href="#nova-mark"/>
+  </g>
+
+  <!-- Version 2: icon with stacked NOVA wordmark -->
+  <g id="icon-and-text" transform="translate(263 80)">
+    <use href="#nova-mark"/>
+    <g transform="translate(116 42)">
+      <use href="#nova-wordmark"/>
+    </g>
+  </g>
+
+  <!-- Version 3: horizontal lockup, optimized for headers and documentation -->
+  <g id="horizontal-lockup" transform="translate(659 80)">
+    <use href="#nova-mark"/>
+    <path d="M118 17v62" stroke="#314258" stroke-width="1"/>
+    <g transform="translate(143 42)">
+      <use href="#nova-wordmark"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 450" width="1600" height="450" role="img" aria-labelledby="title desc">
+  <!-- Responsive NOVA hero: premium AI operations dashboard -->
+  <title id="title">NOVA &#8212; Neural Operations and Vision Architecture</title>
+  <desc id="desc">A futuristic AI profile dashboard for Adit Kapadiya.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0D1117"/><stop offset=".55" stop-color="#101426"/><stop offset="1" stop-color="#16102A"/></linearGradient>
+    <linearGradient id="edge" x1="0" x2="1"><stop stop-color="#00E5FF"/><stop offset="1" stop-color="#8B5CF6"/></linearGradient>
+    <radialGradient id="cyanGlow"><stop stop-color="#00E5FF" stop-opacity=".18"/><stop offset="1" stop-color="#00E5FF" stop-opacity="0"/></radialGradient>
+    <radialGradient id="violetGlow"><stop stop-color="#7C3AED" stop-opacity=".28"/><stop offset="1" stop-color="#7C3AED" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#9BC5D0" stroke-opacity=".055"/></pattern>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="shadow" x="-20%" y="-30%" width="140%" height="160%"><feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#020617" flood-opacity=".6"/></filter>
+    <linearGradient id="scan" x1="0" x2="0" y2="1"><stop stop-color="#00E5FF" stop-opacity="0"/><stop offset=".5" stop-color="#00E5FF" stop-opacity=".85"/><stop offset="1" stop-color="#00E5FF" stop-opacity="0"/></linearGradient>
+  </defs>
+
+  <!-- Atmospheric base and restrained technical grid -->
+  <rect width="1600" height="450" fill="url(#bg)"/>
+  <rect width="1600" height="450" fill="url(#grid)"/>
+  <ellipse cx="1285" cy="180" rx="430" ry="330" fill="url(#violetGlow)"/>
+  <ellipse cx="1020" cy="390" rx="360" ry="160" fill="url(#cyanGlow)" opacity=".55"/>
+  <path d="M0 87H205l25 25h126M0 354h118l32-32h154M1600 74h-145l-30 30h-126M1600 375h-180l-31-31h-123" fill="none" stroke="#90DFF2" stroke-opacity=".16" stroke-linecap="round"/>
+  <g filter="url(#glow)"><circle cx="230" cy="112" r="3" fill="#00E5FF"/><circle cx="1425" cy="104" r="3" fill="#8B5CF6"/><circle cx="1389" cy="344" r="3" fill="#00E5FF"/></g>
+
+  <!-- Left content: balanced visual rhythm and high-contrast type hierarchy -->
+  <g font-family="Inter,Segoe UI,Arial,sans-serif">
+    <g transform="translate(112 92)">
+      <rect width="10" height="10" rx="2" fill="#00E5FF" filter="url(#glow)"/>
+      <text x="22" y="10" fill="#65EFFF" font-size="13" font-weight="700" letter-spacing="3.2">NOVA //</text>
+      <text y="38" fill="#8997B2" font-size="12" font-weight="600" letter-spacing="1.65">NEURAL OPERATIONS &amp; VISION ARCHITECTURE</text>
+    </g>
+    <text x="112" y="216" fill="#F8FAFC" font-size="60" font-weight="700" letter-spacing="-2.7">Adit Kapadiya</text>
+    <rect x="112" y="236" width="310" height="2" rx="1" fill="url(#edge)"/>
+    <text x="112" y="278" fill="#C4CFDF" font-size="18" font-weight="500">AI &amp; Backend Developer <tspan fill="#75829D">&#8226;</tspan> Data Science Enthusiast</text>
+    <g transform="translate(112 313)"><rect width="410" height="39" rx="19.5" fill="#111C2C" stroke="#33445F" stroke-opacity=".72"/><circle cx="20" cy="19.5" r="4" fill="#8B5CF6"/><text x="36" y="24" fill="#B8C4D8" font-size="14" font-weight="600">Mission: Building Intelligent Software</text></g>
+  </g>
+
+  <!-- Right glass panel with contained neural visualization -->
+  <g transform="translate(1073 73)" font-family="Inter,Segoe UI,Arial,sans-serif" filter="url(#shadow)">
+    <rect width="414" height="292" rx="18" fill="#111827" fill-opacity=".84" stroke="#5B7A9B" stroke-opacity=".5"/>
+    <path d="M1 57h412" stroke="#50647E" stroke-opacity=".42"/>
+    <circle cx="27" cy="29" r="5" fill="#00E5FF" filter="url(#glow)"/>
+    <text x="43" y="34" fill="#DCE8F8" font-size="12" font-weight="700" letter-spacing="2">SYSTEM PROFILE</text>
+    <text x="337" y="34" fill="#8D9CB6" font-size="12" letter-spacing="1">v1.0</text>
+    <!-- Abstract neural signal field -->
+    <g transform="translate(256 77)" fill="none" stroke-linecap="round"><circle cx="58" cy="58" r="58" stroke="#6D50CB" stroke-opacity=".28"/><circle cx="58" cy="58" r="38" stroke="#00E5FF" stroke-opacity=".23"/><path d="M7 70 40 41l31 17 36-35M18 99l28-12 30 18 34-16" stroke="url(#edge)" stroke-opacity=".75"/><g fill="#00E5FF" filter="url(#glow)"><circle cx="40" cy="41" r="3"/><circle cx="71" cy="58" r="3"/><circle cx="110" cy="23" r="3"/></g><circle cx="76" cy="105" r="3" fill="#8B5CF6" filter="url(#glow)"/></g>
+    <text x="28" y="96" fill="#74849F" font-size="11" font-weight="700" letter-spacing="1.7">GITHUB</text>
+    <text x="28" y="125" fill="#F8FAFC" font-size="22" font-weight="700" letter-spacing="-.3">adit301206</text>
+    <path d="M28 150h358" stroke="#43536B" stroke-opacity=".62"/>
+    <text x="28" y="181" fill="#74849F" font-size="11" font-weight="700" letter-spacing="1.7">STATUS</text>
+    <circle cx="32" cy="209" r="5" fill="#00E5FF" filter="url(#glow)"><animate attributeName="opacity" values="1;.35;1" dur="1.8s" repeatCount="indefinite"/></circle>
+    <text x="47" y="214" fill="#65EFFF" font-size="15" font-weight="700" letter-spacing="1.15">&#9679; ONLINE</text>
+    <text x="28" y="252" fill="#8290A9" font-size="11" font-weight="700" letter-spacing="1.7">CORE UPLINK</text>
+    <path d="M28 270h358" stroke="#293A52" stroke-width="5" stroke-linecap="round"/><path d="M28 270h248" stroke="url(#edge)" stroke-width="5" stroke-linecap="round" filter="url(#glow)"/>
+  </g>
+
+  <!-- Footer telemetry and a slow, low-distraction scan line -->
+  <g font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="2.2"><text x="112" y="399" fill="#667894">AI CORE / ACTIVE</text><text x="112" y="421" fill="#54DDEE">INTELLIGENCE &#8226; SCALE &#8226; IMPACT</text><text x="1373" y="411" fill="#667894">NOVA.OS</text></g>
+  <rect x="0" y="-28" width="1600" height="56" fill="url(#scan)" opacity=".34"><animate attributeName="y" values="-56;450" dur="8s" repeatCount="indefinite"/></rect>
+</svg>

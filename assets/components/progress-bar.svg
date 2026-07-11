@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 310" width="800" height="310" role="img" aria-label="NOVA animated progress bar variants">
+  <!-- Reusable AI dashboard progress bars: 20, 40, 60, 80, and 100 percent. -->
+  <defs>
+    <linearGradient id="animated-signal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00E5FF"/>
+      <stop offset=".45" stop-color="#7C3AED"/>
+      <stop offset=".62" stop-color="#00FFA3"/>
+      <stop offset="1" stop-color="#00E5FF"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-1 0;1 0;-1 0" dur="4s" repeatCount="indefinite"/>
+    </linearGradient>
+    <filter id="signal-glow" x="-10%" y="-250%" width="120%" height="600%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <!-- 20% -->
+  <g id="progress-20" font-family="Inter,Segoe UI,Arial,sans-serif">
+    <text x="72" y="47" fill="#8B9CB5" font-size="11" font-weight="700" letter-spacing="1.7">PROGRESS</text><text x="728" y="47" text-anchor="end" fill="#65EFFF" font-size="12" font-weight="700">20%</text>
+    <rect x="72" y="61" width="656" height="14" rx="7" fill="#1B2A3F" stroke="#3B506C" stroke-opacity=".62"/>
+    <rect x="72" y="61" width="131" height="14" rx="7" fill="url(#animated-signal)" filter="url(#signal-glow)"/>
+  </g>
+
+  <!-- 40% -->
+  <g id="progress-40" transform="translate(0 57)" font-family="Inter,Segoe UI,Arial,sans-serif">
+    <text x="72" y="47" fill="#8B9CB5" font-size="11" font-weight="700" letter-spacing="1.7">PROGRESS</text><text x="728" y="47" text-anchor="end" fill="#65EFFF" font-size="12" font-weight="700">40%</text>
+    <rect x="72" y="61" width="656" height="14" rx="7" fill="#1B2A3F" stroke="#3B506C" stroke-opacity=".62"/>
+    <rect x="72" y="61" width="262" height="14" rx="7" fill="url(#animated-signal)" filter="url(#signal-glow)"/>
+  </g>
+
+  <!-- 60% -->
+  <g id="progress-60" transform="translate(0 114)" font-family="Inter,Segoe UI,Arial,sans-serif">
+    <text x="72" y="47" fill="#8B9CB5" font-size="11" font-weight="700" letter-spacing="1.7">PROGRESS</text><text x="728" y="47" text-anchor="end" fill="#65EFFF" font-size="12" font-weight="700">60%</text>
+    <rect x="72" y="61" width="656" height="14" rx="7" fill="#1B2A3F" stroke="#3B506C" stroke-opacity=".62"/>
+    <rect x="72" y="61" width="394" height="14" rx="7" fill="url(#animated-signal)" filter="url(#signal-glow)"/>
+  </g>
+
+  <!-- 80% -->
+  <g id="progress-80" transform="translate(0 171)" font-family="Inter,Segoe UI,Arial,sans-serif">
+    <text x="72" y="47" fill="#8B9CB5" font-size="11" font-weight="700" letter-spacing="1.7">PROGRESS</text><text x="728" y="47" text-anchor="end" fill="#65EFFF" font-size="12" font-weight="700">80%</text>
+    <rect x="72" y="61" width="656" height="14" rx="7" fill="#1B2A3F" stroke="#3B506C" stroke-opacity=".62"/>
+    <rect x="72" y="61" width="525" height="14" rx="7" fill="url(#animated-signal)" filter="url(#signal-glow)"/>
+  </g>
+
+  <!-- 100% -->
+  <g id="progress-100" transform="translate(0 228)" font-family="Inter,Segoe UI,Arial,sans-serif">
+    <text x="72" y="47" fill="#8B9CB5" font-size="11" font-weight="700" letter-spacing="1.7">PROGRESS</text><text x="728" y="47" text-anchor="end" fill="#65EFFF" font-size="12" font-weight="700">100%</text>
+    <rect x="72" y="61" width="656" height="14" rx="7" fill="#1B2A3F" stroke="#3B506C" stroke-opacity=".62"/>
+    <rect x="72" y="61" width="656" height="14" rx="7" fill="url(#animated-signal)" filter="url(#signal-glow)"/>
+  </g>
+</svg>

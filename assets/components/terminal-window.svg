@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="900" height="500" role="img" aria-label="Reusable NOVA terminal window template">
+  <!-- Responsive glassmorphism terminal shell; replace {{CONTENT}} with console content. -->
+  <defs>
+    <linearGradient id="edge-light" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#00E5FF" stop-opacity=".64"/><stop offset=".48" stop-color="#64748B" stop-opacity=".28"/><stop offset="1" stop-color="#7C3AED" stop-opacity=".62"/></linearGradient>
+    <linearGradient id="toolbar-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#1A2940" stop-opacity=".78"/><stop offset="1" stop-color="#101827" stop-opacity=".5"/></linearGradient>
+    <filter id="outer-glow" x="-12%" y="-15%" width="124%" height="130%"><feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#030712" flood-opacity=".68"/><feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#00E5FF" flood-opacity=".13"/></filter>
+    <filter id="soft-glow" x="-100%" y="-200%" width="300%" height="500%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <pattern id="content-grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#00E5FF" stroke-opacity=".035"/></pattern>
+  </defs>
+
+  <!-- Glass terminal frame on a transparent canvas. -->
+  <g id="terminal-window" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" filter="url(#outer-glow)">
+    <rect x="20" y="20" width="860" height="460" rx="22" fill="#0D1522" fill-opacity=".86" stroke="url(#edge-light)" stroke-width="1.25"/>
+    <path d="M21 83H879" stroke="#50627A" stroke-opacity=".58"/>
+    <rect x="21" y="21" width="858" height="62" rx="21" fill="url(#toolbar-glass)"/>
+    <path d="M21 83H879" stroke="#00E5FF" stroke-opacity=".16"/>
+
+    <!-- Top toolbar and standard window controls. -->
+    <g id="window-controls" transform="translate(52 51)">
+      <circle r="7" fill="#FF5F57"/><circle cx="24" r="7" fill="#F6C453"/><circle cx="48" r="7" fill="#00FFA3"/>
+    </g>
+    <g id="toolbar-title">
+      <path d="M152 51h16M152 57h10" stroke="#00E5FF" stroke-width="2" stroke-linecap="round" filter="url(#soft-glow)"/>
+      <text x="183" y="57" fill="#C3D0E2" font-size="12" font-weight="700" letter-spacing="1.8">NOVA TERMINAL</text>
+      <text x="769" y="57" fill="#71839E" font-size="10" letter-spacing="1.2">SECURE SESSION</text>
+    </g>
+
+    <!-- Content viewport: a quiet grid and replaceable console area. -->
+    <g id="content-placeholder">
+      <rect x="48" y="108" width="804" height="340" rx="14" fill="url(#content-grid)" stroke="#3A4D68" stroke-opacity=".48" stroke-dasharray="3 7"/>
+      <path d="M77 146h7" stroke="#00FFA3" stroke-width="4" stroke-linecap="round" filter="url(#soft-glow)"/>
+      <text x="96" y="151" fill="#8FA1BA" font-size="13" letter-spacing=".5">{{CONTENT}}</text>
+      <path d="M77 178h375M77 198h287M77 218h332" stroke="#52657D" stroke-opacity=".42" stroke-linecap="round"/>
+      <rect x="77" y="250" width="218" height="7" rx="3.5" fill="#00E5FF" fill-opacity=".16"/>
+      <rect x="77" y="268" width="355" height="7" rx="3.5" fill="#7C3AED" fill-opacity=".14"/>
+      <path d="M77 406h98" stroke="#00E5FF" stroke-opacity=".58" stroke-width="2" stroke-linecap="round" filter="url(#soft-glow)"/>
+      <circle cx="830" cy="126" r="3" fill="#00E5FF" filter="url(#soft-glow)"/>
+    </g>
+  </g>
+</svg>

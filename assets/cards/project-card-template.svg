@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 420" width="700" height="420" role="img" aria-label="Reusable NOVA project card template">
+  <!-- Transparent, reusable premium project-card layout -->
+  <defs>
+    <linearGradient id="card-edge" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#00E5FF" stop-opacity=".72"/><stop offset=".48" stop-color="#61718A" stop-opacity=".36"/><stop offset="1" stop-color="#7C3AED" stop-opacity=".7"/></linearGradient>
+    <linearGradient id="progress-fill" x1="0" x2="1"><stop stop-color="#00E5FF"/><stop offset="1" stop-color="#7C3AED"/></linearGradient>
+    <filter id="card-shadow" x="-15%" y="-18%" width="130%" height="140%"><feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#030712" flood-opacity=".55"/></filter>
+    <filter id="cyan-glow" x="-100%" y="-300%" width="300%" height="700%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <!-- Main frosted card surface; surrounding canvas remains transparent. -->
+  <g id="project-card" font-family="Inter,Segoe UI,Arial,sans-serif" filter="url(#card-shadow)">
+    <rect x="16" y="16" width="668" height="388" rx="22" fill="#101827" fill-opacity=".94" stroke="url(#card-edge)" stroke-width="1.25"/>
+    <path d="M17 88H683" stroke="#4D607A" stroke-opacity=".46"/>
+
+    <!-- Card header placeholders -->
+    <g id="header">
+      <circle cx="48" cy="52" r="7" fill="#00E5FF" filter="url(#cyan-glow)"/>
+      <text x="65" y="56" fill="#8D9BB0" font-size="11" font-weight="700" letter-spacing="1.7">PROJECT ID</text>
+      <rect x="147" y="45" width="110" height="14" rx="7" fill="#26374D"/>
+      <text x="529" y="56" fill="#8D9BB0" font-size="11" font-weight="700" letter-spacing="1.5">STATUS</text>
+      <rect x="592" y="41" width="58" height="22" rx="11" fill="#113B46" stroke="#00E5FF" stroke-opacity=".55"/>
+    </g>
+
+    <!-- Primary project identity placeholders -->
+    <g id="project-identity">
+      <text x="48" y="127" fill="#8D9BB0" font-size="10" font-weight="700" letter-spacing="1.6">PROJECT NAME</text>
+      <rect x="48" y="143" width="286" height="25" rx="6" fill="#E6F3FF" fill-opacity=".92"/>
+      <text x="48" y="202" fill="#8D9BB0" font-size="10" font-weight="700" letter-spacing="1.6">DESCRIPTION</text>
+      <rect x="48" y="218" width="390" height="10" rx="5" fill="#3B4C64"/>
+      <rect x="48" y="237" width="334" height="10" rx="5" fill="#293A50"/>
+    </g>
+
+    <!-- Technology token placeholders -->
+    <g id="technologies">
+      <text x="48" y="285" fill="#8D9BB0" font-size="10" font-weight="700" letter-spacing="1.6">TECHNOLOGIES</text>
+      <rect x="48" y="298" width="73" height="24" rx="12" fill="#17263A" stroke="#405675"/>
+      <rect x="130" y="298" width="91" height="24" rx="12" fill="#17263A" stroke="#405675"/>
+      <rect x="230" y="298" width="64" height="24" rx="12" fill="#17263A" stroke="#405675"/>
+    </g>
+
+    <!-- Repository and version metadata placeholders -->
+    <g id="metadata">
+      <text x="472" y="127" fill="#8D9BB0" font-size="10" font-weight="700" letter-spacing="1.4">REPOSITORY</text>
+      <rect x="472" y="143" width="178" height="12" rx="6" fill="#34475E"/>
+      <text x="472" y="188" fill="#8D9BB0" font-size="10" font-weight="700" letter-spacing="1.4">VERSION</text>
+      <rect x="472" y="204" width="84" height="12" rx="6" fill="#34475E"/>
+      <text x="472" y="249" fill="#8D9BB0" font-size="10" font-weight="700" letter-spacing="1.4">LAST UPDATED</text>
+      <rect x="472" y="265" width="128" height="12" rx="6" fill="#34475E"/>
+    </g>
+
+    <!-- Progress component; replace fill width for live project progress. -->
+    <g id="progress">
+      <text x="48" y="360" fill="#8D9BB0" font-size="10" font-weight="700" letter-spacing="1.6">PROGRESS</text>
+      <text x="606" y="360" fill="#8D9BB0" font-size="10" font-weight="700" letter-spacing="1.2">0%</text>
+      <rect x="48" y="374" width="602" height="6" rx="3" fill="#26374C"/>
+      <rect x="48" y="374" width="5" height="6" rx="3" fill="url(#progress-fill)" filter="url(#cyan-glow)"/>
+    </g>
+  </g>
+</svg>

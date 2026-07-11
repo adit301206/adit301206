@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 116" width="960" height="116" role="img" aria-label="NOVA status pill variants">
+  <!-- Six reusable status pills. Each named group can be extracted or referenced independently. -->
+  <defs>
+    <filter id="soft-glow" x="-60%" y="-100%" width="220%" height="300%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <!-- ONLINE -->
+  <g id="online" transform="translate(24 38)" font-family="Inter,Segoe UI,Arial,sans-serif">
+    <rect width="118" height="40" rx="20" fill="#102C29" fill-opacity=".74" stroke="#00FFA3" stroke-opacity=".62"/>
+    <circle cx="20" cy="20" r="5" fill="#00FFA3" filter="url(#soft-glow)"/>
+    <text x="35" y="24" fill="#B5FFE1" font-size="12" font-weight="700" letter-spacing="1.1">ONLINE</text>
+  </g>
+
+  <!-- OFFLINE -->
+  <g id="offline" transform="translate(166 38)" font-family="Inter,Segoe UI,Arial,sans-serif">
+    <rect width="118" height="40" rx="20" fill="#202733" fill-opacity=".74" stroke="#8692A6" stroke-opacity=".52"/>
+    <circle cx="20" cy="20" r="5" fill="#8692A6" filter="url(#soft-glow)"/>
+    <text x="35" y="24" fill="#CAD2E0" font-size="12" font-weight="700" letter-spacing="1.05">OFFLINE</text>
+  </g>
+
+  <!-- BUILDING -->
+  <g id="building" transform="translate(308 38)" font-family="Inter,Segoe UI,Arial,sans-serif">
+    <rect width="128" height="40" rx="20" fill="#30260F" fill-opacity=".74" stroke="#F6C453" stroke-opacity=".62"/>
+    <circle cx="20" cy="20" r="5" fill="#F6C453" filter="url(#soft-glow)"/>
+    <text x="35" y="24" fill="#FFE7A3" font-size="12" font-weight="700" letter-spacing="1.05">BUILDING</text>
+  </g>
+
+  <!-- ACTIVE -->
+  <g id="active" transform="translate(460 38)" font-family="Inter,Segoe UI,Arial,sans-serif">
+    <rect width="112" height="40" rx="20" fill="#102C35" fill-opacity=".74" stroke="#00E5FF" stroke-opacity=".66"/>
+    <circle cx="20" cy="20" r="5" fill="#00E5FF" filter="url(#soft-glow)"/>
+    <text x="35" y="24" fill="#B5F7FF" font-size="12" font-weight="700" letter-spacing="1.1">ACTIVE</text>
+  </g>
+
+  <!-- ARCHIVED -->
+  <g id="archived" transform="translate(596 38)" font-family="Inter,Segoe UI,Arial,sans-serif">
+    <rect width="130" height="40" rx="20" fill="#211D31" fill-opacity=".74" stroke="#A78BFA" stroke-opacity=".58"/>
+    <circle cx="20" cy="20" r="5" fill="#A78BFA" filter="url(#soft-glow)"/>
+    <text x="35" y="24" fill="#DED5FF" font-size="12" font-weight="700" letter-spacing=".9">ARCHIVED</text>
+  </g>
+
+  <!-- COMING SOON -->
+  <g id="coming-soon" transform="translate(750 38)" font-family="Inter,Segoe UI,Arial,sans-serif">
+    <rect width="186" height="40" rx="20" fill="#2A1C32" fill-opacity=".74" stroke="#F472B6" stroke-opacity=".6"/>
+    <circle cx="20" cy="20" r="5" fill="#F472B6" filter="url(#soft-glow)"/>
+    <text x="35" y="24" fill="#FFD0E8" font-size="12" font-weight="700" letter-spacing="1">COMING SOON</text>
+  </g>
+</svg>
