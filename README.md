@@ -72,7 +72,8 @@ The engineering focus: solve hard problems, ship resilient systems, and keep lea
 ## Open Source Signal
 
 <div align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=adit301206&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" alt="GitHub statistics for adit301206" />
+  <img height="170"
+src="https://github-readme-stats-git-master-adit-kapadiyas-projects.vercel.app/api?username=adit301206&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github"/>
   <img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=adit301206&theme=tokyonight&hide_border=true" alt="GitHub contribution streak for adit301206" />
   <br />
   <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=adit301206&layout=compact&theme=tokyonight&hide_border=true" alt="Most used programming languages" />
