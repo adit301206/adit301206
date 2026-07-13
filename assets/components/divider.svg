@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 80" role="img" aria-label="NOVA component divider">
+  <!-- NOVA component: divider -->
+  <defs><filter id="nova-glow" x="-50%" y="-400%" width="200%" height="900%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <g fill="none" stroke-linecap="round"><path d="M72 40h662m132 0h662" stroke="#00E5FF" stroke-opacity=".2"/><path d="M570 40h264m32 0h264" stroke="#00E5FF" stroke-opacity=".7" stroke-width="2" filter="url(#nova-glow)"/><circle cx="800" cy="40" r="15" stroke="#7C3AED" stroke-opacity=".52"/><circle cx="800" cy="40" r="4" fill="#00E5FF" filter="url(#nova-glow)"/></g>
+</svg>

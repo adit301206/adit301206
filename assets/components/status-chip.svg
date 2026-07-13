@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184 48" role="img" aria-label="NOVA status chip">
+  <!-- NOVA component: status chip -->
+  <defs><filter id="nova-glow" x="-70%" y="-130%" width="240%" height="360%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><filter id="nova-shadow" x="-20%" y="-40%" width="140%" height="180%"><feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#020617" flood-opacity=".55"/></filter></defs>
+  <g font-family="Inter,Segoe UI,Arial,sans-serif" filter="url(#nova-shadow)"><rect x="4" y="4" width="176" height="40" rx="16" fill="#111C2B" fill-opacity=".88" stroke="#00E5FF" stroke-opacity=".52"/><circle cx="26" cy="24" r="5" fill="#00FFA3" filter="url(#nova-glow)"/><text x="42" y="28" fill="#B9FFE2" font-size="12" font-weight="700" letter-spacing="1.2">{{STATUS}}</text></g>
+</svg>

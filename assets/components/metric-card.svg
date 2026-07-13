@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 180" role="img" aria-label="NOVA metric card template">
+  <!-- NOVA component: metric card -->
+  <defs><filter id="nova-glow" x="-70%" y="-130%" width="240%" height="360%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><filter id="nova-shadow" x="-20%" y="-30%" width="140%" height="160%"><feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#020617" flood-opacity=".55"/></filter></defs>
+  <g font-family="Inter,Segoe UI,Arial,sans-serif" filter="url(#nova-shadow)"><rect x="8" y="8" width="284" height="164" rx="16" fill="#111C2B" fill-opacity=".88" stroke="#00E5FF" stroke-opacity=".38"/><text x="32" y="42" fill="#8FA1BA" font-size="10" font-weight="700" letter-spacing="1.6">{{METRIC_LABEL}}</text><text x="32" y="91" fill="#EFF8FF" font-size="38" font-weight="700">{{VALUE}}</text><path d="M32 119h236" stroke="#40536D"/><path d="M32 142h132" stroke="#00E5FF" stroke-width="3" stroke-linecap="round" filter="url(#nova-glow)"/><circle cx="260" cy="36" r="5" fill="#7C3AED" filter="url(#nova-glow)"/></g>
+</svg>

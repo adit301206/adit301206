@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 56" role="img" aria-label="NOVA primary button">
+  <!-- NOVA component: primary button -->
+  <defs><filter id="nova-glow" x="-50%" y="-130%" width="200%" height="360%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><filter id="nova-shadow" x="-20%" y="-50%" width="140%" height="200%"><feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#020617" flood-opacity=".55"/></filter></defs>
+  <g font-family="Inter,Segoe UI,Arial,sans-serif" filter="url(#nova-shadow)"><rect x="4" y="4" width="212" height="48" rx="16" fill="#00E5FF" fill-opacity=".16" stroke="#00E5FF" stroke-width="1.25" filter="url(#nova-glow)"/><text x="110" y="33" text-anchor="middle" fill="#DFFBFF" font-size="12" font-weight="700" letter-spacing="1.4">{{BUTTON_LABEL}}</text><path d="M188 28h10m-4-4 4 4-4 4" stroke="#00E5FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg>

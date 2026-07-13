@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 88" role="img" aria-label="NOVA tooltip template">
+  <!-- NOVA component: tooltip -->
+  <defs><filter id="nova-glow" x="-50%" y="-120%" width="200%" height="340%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><filter id="nova-shadow" x="-20%" y="-35%" width="140%" height="170%"><feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#020617" flood-opacity=".55"/></filter></defs>
+  <g font-family="Inter,Segoe UI,Arial,sans-serif" filter="url(#nova-shadow)"><path d="M132 76 140 84l8-8" fill="#111C2B" stroke="#00E5FF" stroke-opacity=".42"/><rect x="4" y="4" width="272" height="72" rx="16" fill="#111C2B" fill-opacity=".94" stroke="#00E5FF" stroke-opacity=".42"/><circle cx="28" cy="28" r="5" fill="#00E5FF" filter="url(#nova-glow)"/><text x="44" y="32" fill="#E5F7FF" font-size="12" font-weight="700">{{TOOLTIP_TITLE}}</text><text x="20" y="56" fill="#9FB1C7" font-size="12">{{TOOLTIP_COPY}}</text></g>
+</svg>

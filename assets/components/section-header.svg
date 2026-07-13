@@ -1,40 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 180" width="1600" height="180" role="img" aria-label="NOVA section header">
-  <!-- Reusable transparent header; replace {{SECTION_NAME}} with the section title. -->
-  <defs>
-    <filter id="neon-glow" x="-120%" y="-300%" width="340%" height="700%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-  </defs>
-
-  <!-- Delicate cyan divider with a clean central title break. -->
-  <g fill="none" stroke-linecap="round">
-    <path d="M96 96H577M1023 96h481" stroke="#00E5FF" stroke-opacity=".2"/>
-    <path d="M178 96h399M1023 96h399" stroke="#00E5FF" stroke-opacity=".7" filter="url(#neon-glow)"/>
-    <circle cx="178" cy="96" r="2.5" fill="#00E5FF"/><circle cx="1422" cy="96" r="2.5" fill="#00E5FF"/>
-  </g>
-
-  <!-- Left AI activity indicator. -->
-  <g id="ai-indicator" transform="translate(118 66)" fill="none" stroke-linecap="round">
-    <circle cx="30" cy="30" r="29" stroke="#00E5FF" stroke-opacity=".32"/>
-    <circle cx="30" cy="30" r="20" stroke="#7C3AED" stroke-opacity=".55"/>
-    <path d="M20 35V22l20 20V22" stroke="#00E5FF" stroke-width="3.5" filter="url(#neon-glow)"/>
-    <circle cx="30" cy="10" r="3" fill="#00FFA3" stroke="none"/>
-  </g>
-
-  <!-- Center title placeholder. -->
-  <g id="section-title" font-family="Inter,Segoe UI,Arial,sans-serif" text-anchor="middle">
-    <text x="800" y="77" fill="#73849D" font-size="10" font-weight="700" letter-spacing="3">NOVA // SECTION</text>
-    <text x="800" y="111" fill="#ECF8FF" font-size="24" font-weight="700" letter-spacing="2">{{SECTION_NAME}}</text>
-    <path d="M760 130h80" stroke="#00E5FF" stroke-opacity=".76" stroke-width="2" stroke-linecap="round" filter="url(#neon-glow)"/>
-  </g>
-
-  <!-- Right system status indicator and minimal HUD telemetry. -->
-  <g id="status-indicator" transform="translate(1320 67)" font-family="Inter,Segoe UI,Arial,sans-serif">
-    <rect width="164" height="58" rx="14" fill="#111C2B" fill-opacity=".74" stroke="#3E5672" stroke-opacity=".75"/>
-    <circle cx="23" cy="29" r="5" fill="#00FFA3" filter="url(#neon-glow)"/>
-    <text x="39" y="25" fill="#AAB8CB" font-size="10" font-weight="700" letter-spacing="1.5">SYSTEM</text>
-    <text x="39" y="41" fill="#65EFFF" font-size="11" font-weight="700" letter-spacing="1.1">READY</text>
-    <path d="M132 19h15M132 25h9M132 31h15M132 37h6" stroke="#7C3AED" stroke-width="2" stroke-linecap="round"/>
-  </g>
-
-  <!-- Sparse HUD ticks preserve elegance without adding visual noise. -->
-  <g stroke="#7C3AED" stroke-opacity=".46" stroke-linecap="round"><path d="M96 75v-10M96 117v-10M1504 75v-10M1504 117v-10"/><path d="M550 145h18M1032 145h18" stroke="#00E5FF"/></g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 180" role="img" aria-label="NOVA reusable section header">
+  <!-- NOVA component: section header -->
+  <defs><filter id="nova-glow" x="-70%" y="-300%" width="240%" height="700%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><filter id="nova-shadow" x="-20%" y="-80%" width="140%" height="260%"><feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#020617" flood-opacity=".55"/></filter></defs>
+  <g font-family="Inter,Segoe UI,Arial,sans-serif" filter="url(#nova-shadow)"><path d="M88 94h494M1018 94h494" stroke="#00E5FF" stroke-opacity=".22"/><path d="M248 94h334M1018 94h334" stroke="#00E5FF" stroke-opacity=".7" stroke-width="2" stroke-linecap="round" filter="url(#nova-glow)"/><g transform="translate(116 66)" fill="none" stroke-linecap="round"><rect width="56" height="56" rx="16" fill="#111C2B" fill-opacity=".86" stroke="#00E5FF" stroke-opacity=".42"/><path d="M20 36V20l16 16V20" stroke="#00E5FF" stroke-width="3"/><circle cx="28" cy="13" r="3" fill="#7C3AED" stroke="none"/></g><text x="800" y="76" text-anchor="middle" fill="#7F91AA" font-size="10" font-weight="700" letter-spacing="2.2">NOVA // SECTION</text><text x="800" y="111" text-anchor="middle" fill="#EFF8FF" font-size="24" font-weight="700" letter-spacing="1.6">{{SECTION_NAME}}</text><path d="M760 131h80" stroke="#00E5FF" stroke-width="2" stroke-linecap="round" filter="url(#nova-glow)"/><g transform="translate(1364 66)"><rect width="120" height="56" rx="16" fill="#111C2B" fill-opacity=".86" stroke="#00E5FF" stroke-opacity=".42"/><circle cx="24" cy="28" r="5" fill="#00FFA3" filter="url(#nova-glow)"/><text x="40" y="32" fill="#B9FFE2" font-size="11" font-weight="700" letter-spacing="1">READY</text></g></g>
 </svg>

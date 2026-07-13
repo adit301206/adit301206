@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="title desc">
+  <!-- NOVA developer console: transparent glass HUD for dark interfaces -->
+  <title id="title">NOVA Developer Console</title>
+  <desc id="desc">AI terminal dashboard for Adit Kapadiya.</desc>
+  <defs>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#00E5FF" stop-opacity=".72"/><stop offset=".48" stop-color="#5A6C85" stop-opacity=".28"/><stop offset="1" stop-color="#7C3AED" stop-opacity=".72"/></linearGradient>
+    <linearGradient id="scan" x1="0" x2="1"><stop stop-color="#00E5FF" stop-opacity="0"/><stop offset=".5" stop-color="#00E5FF" stop-opacity=".7"/><stop offset="1" stop-color="#00E5FF" stop-opacity="0"/></linearGradient>
+    <filter id="shadow" x="-10%" y="-12%" width="120%" height="130%"><feDropShadow dx="0" dy="20" stdDeviation="22" flood-color="#030712" flood-opacity=".7"/><feDropShadow dx="0" dy="0" stdDeviation="7" flood-color="#00E5FF" flood-opacity=".1"/></filter>
+    <filter id="glow" x="-100%" y="-300%" width="300%" height="700%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#00E5FF" stroke-opacity=".035"/></pattern>
+  </defs>
+
+  <!-- Main transparent glass terminal frame. -->
+  <g font-family="Inter,Segoe UI,Arial,sans-serif" filter="url(#shadow)">
+    <rect x="40" y="38" width="1520" height="824" rx="28" fill="#0D1522" fill-opacity=".9" stroke="url(#edge)" stroke-width="1.25"/>
+    <rect x="41" y="39" width="1518" height="824" rx="27" fill="url(#grid)"/>
+    <path d="M41 114H1559" stroke="#52657D" stroke-opacity=".52"/>
+    <path d="M41 114H1559" stroke="#00E5FF" stroke-opacity=".13"/>
+
+    <!-- Toolbar -->
+    <g id="toolbar">
+      <circle cx="76" cy="76" r="7" fill="#FF5F57"/><circle cx="100" cy="76" r="7" fill="#F6C453"/><circle cx="124" cy="76" r="7" fill="#00FFA3"/>
+      <path d="M170 70h18M170 78h11" stroke="#00E5FF" stroke-width="2" stroke-linecap="round" filter="url(#glow)"/>
+      <text x="204" y="81" fill="#D3E2F1" font-size="13" font-weight="700" letter-spacing="2.2">NOVA // DEVELOPER CONSOLE</text>
+      <g transform="translate(1338 59)"><rect width="174" height="34" rx="17" fill="#102C35" stroke="#00E5FF" stroke-opacity=".36"/><circle cx="19" cy="17" r="5" fill="#00FFA3" filter="url(#glow)"/><text x="34" y="21" fill="#93F9FF" font-size="11" font-weight="700" letter-spacing="1.2">SYSTEM ONLINE</text></g>
+    </g>
+
+    <!-- Left identity rail -->
+    <g id="identity-panel" transform="translate(72 146)">
+      <rect width="408" height="654" rx="20" fill="#111C2B" fill-opacity=".68" stroke="#41546E" stroke-opacity=".64"/>
+      <text x="30" y="42" fill="#7F91AA" font-size="10" font-weight="700" letter-spacing="2">DEVELOPER PROFILE</text>
+      <g transform="translate(30 68)" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect width="92" height="92" rx="22" fill="#102D3B" stroke="#00E5FF" stroke-opacity=".55"/><path d="M46 13 76 30v34L46 81 16 64V30Z" stroke="#00E5FF" stroke-width="3" filter="url(#glow)"/><path d="M31 61V35l30 30V35" stroke="#00E5FF" stroke-width="4"/><circle cx="46" cy="13" r="3" fill="#7C3AED" stroke="none"/><circle cx="76" cy="47" r="3" fill="#00FFA3" stroke="none"/></g>
+      <text x="142" y="102" fill="#F3F9FF" font-size="27" font-weight="700" letter-spacing="-.8">Adit Kapadiya</text>
+      <text x="142" y="129" fill="#65EFFF" font-size="11" font-weight="700" letter-spacing="1.5">AI &amp; BACKEND DEVELOPER</text>
+      <text x="142" y="151" fill="#92A2BA" font-size="12">Data Science Enthusiast</text>
+      <path d="M30 190H378" stroke="#41546E" stroke-opacity=".6"/>
+      <text x="30" y="224" fill="#7F91AA" font-size="10" font-weight="700" letter-spacing="1.8">GITHUB USERNAME</text>
+      <text x="30" y="250" fill="#D6E5F5" font-size="17" font-weight="600">adit301206</text>
+      <text x="30" y="297" fill="#7F91AA" font-size="10" font-weight="700" letter-spacing="1.8">MISSION</text>
+      <text x="30" y="323" fill="#B9C7D9" font-size="14">Designing scalable software and</text><text x="30" y="344" fill="#B9C7D9" font-size="14">intelligent systems.</text>
+      <path d="M30 377H378" stroke="#41546E" stroke-opacity=".6"/>
+      <text x="30" y="411" fill="#7F91AA" font-size="10" font-weight="700" letter-spacing="1.8">SYSTEM STATUS</text>
+      <circle cx="34" cy="442" r="5" fill="#00FFA3" filter="url(#glow)"/><text x="49" y="447" fill="#A9FFE0" font-size="14" font-weight="700" letter-spacing=".8">OPERATIONAL</text>
+      <text x="30" y="494" fill="#7F91AA" font-size="10" font-weight="700" letter-spacing="1.8">SESSION</text>
+      <text x="30" y="520" fill="#8FA1BA" font-size="13">NOVA.AI / v1.0</text>
+      <path d="M30 570H378" stroke="#41546E" stroke-opacity=".6"/>
+      <text x="30" y="605" fill="#00E5FF" font-size="11" font-weight="700" letter-spacing="1.4">&gt; READY FOR EXPLORATION</text>
+      <rect x="260" y="593" width="8" height="14" rx="1" fill="#00E5FF"><animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/></rect>
+    </g>
+
+    <!-- Central project and learning workspace -->
+    <g id="workspace" transform="translate(510 146)">
+      <rect width="648" height="376" rx="20" fill="#111C2B" fill-opacity=".68" stroke="#41546E" stroke-opacity=".64"/>
+      <text x="30" y="42" fill="#7F91AA" font-size="10" font-weight="700" letter-spacing="2">CURRENT PROJECTS</text>
+      <text x="498" y="42" fill="#65EFFF" font-size="10" font-weight="700" letter-spacing="1.2">03 ACTIVE</text>
+      <g transform="translate(30 68)">
+        <rect width="588" height="76" rx="14" fill="#102B37" stroke="#28566A"/><circle cx="28" cy="38" r="12" fill="#00E5FF" fill-opacity=".14" stroke="#00E5FF"/><path d="M22 46V33h7v13m4 0V25h7v21m4 0V31h7v15M19 48h36" fill="none" stroke="#00E5FF" stroke-width="2" stroke-linecap="round"/><text x="78" y="31" fill="#E5F7FF" font-size="16" font-weight="700">NeuroCity</text><text x="78" y="53" fill="#91A3BA" font-size="12">Intelligent urban systems and AI applications</text><text x="512" y="43" fill="#65EFFF" font-size="10" font-weight="700">AI-001</text>
+        <rect y="89" width="588" height="76" rx="14" fill="#201B35" stroke="#51437F"/><circle cx="28" cy="127" r="12" fill="#7C3AED" fill-opacity=".18" stroke="#A78BFA"/><path d="m16 127 12-7 12 7-12 7ZM21 130v7c4 3 10 3 14 0v-7" fill="none" stroke="#C4B5FD" stroke-width="2" stroke-linecap="round"/><text x="78" y="120" fill="#F0ECFF" font-size="16" font-weight="700">PrepWise</text><text x="78" y="142" fill="#AFA8CA" font-size="12">Smart education and focused preparation</text><text x="512" y="132" fill="#C4B5FD" font-size="10" font-weight="700">EDU-002</text>
+        <rect y="178" width="588" height="76" rx="14" fill="#302712" stroke="#695A31"/><circle cx="28" cy="216" r="12" fill="#F6C453" fill-opacity=".16" stroke="#F6C453"/><path d="M28 204 38 208v8c0 7-5 12-10 14-5-2-10-7-10-14v-8ZM31 211c-1-2-6-1-6 2 0 4 8 3 8 7 0 3-5 3-7 1M28 208v14" fill="none" stroke="#F6C453" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><text x="78" y="209" fill="#FFF6DD" font-size="16" font-weight="700">CreditWise</text><text x="78" y="231" fill="#C8B98E" font-size="12">Loan management and data operations</text><text x="512" y="221" fill="#FFE09A" font-size="10" font-weight="700">ML-003</text>
+      </g>
+      <text x="30" y="350" fill="#00E5FF" font-size="11" font-weight="700" letter-spacing="1.2">PROJECT DATABASE SYNCHRONIZED</text>
+    </g>
+
+    <!-- Right modules panel -->
+    <g id="modules-panel" transform="translate(1188 146)">
+      <rect width="340" height="376" rx="20" fill="#111C2B" fill-opacity=".68" stroke="#41546E" stroke-opacity=".64"/>
+      <text x="28" y="42" fill="#7F91AA" font-size="10" font-weight="700" letter-spacing="2">ACTIVE MODULES</text>
+      <g font-size="13" font-weight="600">
+        <g transform="translate(28 74)"><circle cy="0" r="4" fill="#00FFA3" filter="url(#glow)"/><text x="16" y="4" fill="#D1E1EF">Artificial Intelligence</text><text x="245" y="4" fill="#65EFFF">ACTIVE</text></g>
+        <g transform="translate(28 114)"><circle cy="0" r="4" fill="#00FFA3" filter="url(#glow)"/><text x="16" y="4" fill="#D1E1EF">Backend Engine</text><text x="245" y="4" fill="#65EFFF">ACTIVE</text></g>
+        <g transform="translate(28 154)"><circle cy="0" r="4" fill="#00FFA3" filter="url(#glow)"/><text x="16" y="4" fill="#D1E1EF">Python Runtime</text><text x="245" y="4" fill="#65EFFF">READY</text></g>
+        <g transform="translate(28 194)"><circle cy="0" r="4" fill="#F6C453" filter="url(#glow)"/><text x="16" y="4" fill="#D1E1EF">Data Science</text><text x="230" y="4" fill="#FFE09A">LEARNING</text></g>
+        <g transform="translate(28 234)"><circle cy="0" r="4" fill="#7C3AED" filter="url(#glow)"/><text x="16" y="4" fill="#D1E1EF">Cloud Module</text><text x="211" y="4" fill="#C4B5FD">INITIALIZING</text></g>
+      </g>
+      <path d="M28 280h284" stroke="#3E526C"/>
+      <text x="28" y="314" fill="#7F91AA" font-size="10" font-weight="700" letter-spacing="1.8">UPLINK STABILITY</text>
+      <path d="M28 337h284" stroke="#263A50" stroke-width="6" stroke-linecap="round"/><path d="M28 337h245" stroke="#00E5FF" stroke-width="6" stroke-linecap="round" filter="url(#glow)"/>
+      <text x="281" y="315" fill="#65EFFF" font-size="11" font-weight="700">86%</text>
+    </g>
+
+    <!-- Bottom learning terminal -->
+    <g id="learning-terminal" transform="translate(510 552)">
+      <rect width="1018" height="248" rx="20" fill="#111C2B" fill-opacity=".68" stroke="#41546E" stroke-opacity=".64"/>
+      <text x="30" y="42" fill="#7F91AA" font-size="10" font-weight="700" letter-spacing="2">LEARNING PIPELINE</text>
+      <text x="830" y="42" fill="#00FFA3" font-size="10" font-weight="700" letter-spacing="1.2">CONTINUOUS MODE</text>
+      <g transform="translate(30 70)"><rect width="216" height="104" rx="16" fill="#102A37" stroke="#2F5B6D"/><text x="18" y="29" fill="#65EFFF" font-size="11" font-weight="700" letter-spacing="1.4">MACHINE LEARNING</text><text x="18" y="55" fill="#A6B7CB" font-size="12">Models, patterns, and</text><text x="18" y="73" fill="#A6B7CB" font-size="12">practical intelligence.</text><path d="M18 89h162" stroke="#263F53" stroke-width="5" stroke-linecap="round"/><path d="M18 89h121" stroke="#00E5FF" stroke-width="5" stroke-linecap="round" filter="url(#glow)"/></g>
+      <g transform="translate(266 70)"><rect width="216" height="104" rx="16" fill="#201B35" stroke="#51437F"/><text x="18" y="29" fill="#C4B5FD" font-size="11" font-weight="700" letter-spacing="1.4">CLOUD COMPUTING</text><text x="18" y="55" fill="#B3ACC8" font-size="12">Infrastructure and</text><text x="18" y="73" fill="#B3ACC8" font-size="12">deployment systems.</text><path d="M18 89h162" stroke="#352C51" stroke-width="5" stroke-linecap="round"/><path d="M18 89h79" stroke="#7C3AED" stroke-width="5" stroke-linecap="round" filter="url(#glow)"/></g>
+      <g transform="translate(502 70)"><rect width="216" height="104" rx="16" fill="#302712" stroke="#695A31"/><text x="18" y="29" fill="#FFE09A" font-size="11" font-weight="700" letter-spacing="1.4">DATA SCIENCE</text><text x="18" y="55" fill="#C8B98E" font-size="12">Analysis, insights, and</text><text x="18" y="73" fill="#C8B98E" font-size="12">decision support.</text><path d="M18 89h162" stroke="#4C3C21" stroke-width="5" stroke-linecap="round"/><path d="M18 89h103" stroke="#F6C453" stroke-width="5" stroke-linecap="round" filter="url(#glow)"/></g>
+      <g transform="translate(738 70)"><rect width="250" height="104" rx="16" fill="#10222F" stroke="#315267"/><text x="18" y="29" fill="#8DEFFF" font-size="11" font-weight="700" letter-spacing="1.4">TERMINAL OUTPUT</text><text x="18" y="55" fill="#8FA1BA" font-size="12">&gt; Learning systems online</text><text x="18" y="75" fill="#8FA1BA" font-size="12">&gt; New knowledge queued</text><rect x="18" y="86" width="7" height="12" fill="#00E5FF"><animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/></rect></g>
+      <text x="30" y="216" fill="#00E5FF" font-size="11" font-weight="700" letter-spacing="1.3">&gt; SYSTEM READY_</text>
+    </g>
+
+    <!-- Peripheral circuits and animated scanning signal. -->
+    <g fill="none" stroke-linecap="round"><path d="M40 210h20l18 18M40 730h20l18-18M1560 210h-20l-18 18M1560 730h-20l-18-18" stroke="#7C3AED" stroke-opacity=".46"/><path d="M510 836h94M996 836h94" stroke="#00E5FF" stroke-opacity=".44"/></g>
+    <path d="M110 0h1380" stroke="url(#scan)" stroke-width="2" filter="url(#glow)"><animateTransform attributeName="transform" type="translate" values="0 0;0 900" dur="10s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.45;.45;0" dur="10s" repeatCount="indefinite"/></path>
+  </g>
+</svg>
